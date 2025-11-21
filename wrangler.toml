@@ -4,6 +4,7 @@ main = "src/index.js"
 compatibility_date = "2024-07-24"
 compatibility_flags = ["nodejs_compat"]
 
-kv_namespaces = [
-  { binding = "SUBLINK_KV", id = "8943789ed0af49659f887fc740d11240" }
-]
+[[kv_namespaces]]
+binding = "SUBLINK_KV"
+id = "8943789ed0af49659f887fc740d11240"          # 生产环境会自动创建并替换
+preview_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # 预览环境也会自动创建
